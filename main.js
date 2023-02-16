@@ -40,8 +40,8 @@ if(width < 992)
     {
 
         console.log("myTouchMove") 
-        currentPositionOfTouchX = e.clientX - canvas.offsetLeft;
-         currentPositionOfTouchY = e.clientY - canvas.offsetTop;
+         currentPositionOfTouchX = e.touches[0].clientX - canvas.offsetLeft;
+         currentPositionOfTouchY = e.touches[0].clientY - canvas.offsetTop;
 
         
         ctx.beginPath();
